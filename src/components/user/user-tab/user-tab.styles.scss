@@ -1,0 +1,30 @@
+.tab-link{
+    margin-top: 22px;
+    border-bottom: 1px solid rgba(230, 230, 230, 1);
+
+    & .tab-list{
+        display: flex;
+        padding: unset;
+        & li{
+            list-style-type: none;
+            margin-right: 8px;
+
+            & h4{
+                margin: unset;
+                & a{
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-weight: 300;
+                    color: rgba(117, 117, 117, 1);
+                    line-height: 20px;
+
+                    &.is-active{
+                        color: rgba(41, 41, 41, 1) !important;
+                        border-bottom: 1px solid rgba(41, 41, 41, 1);
+                        padding-bottom: 16px;
+                    }
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,73 @@
+.feature-card{
+    margin-bottom: 24px;
+    border-radius: 5px;
+    border: 1px solid rgba(230, 230, 230, 1);
+    padding: 23px 0;
+    background-color: rgba(255, 255, 255, 1);
+
+    & .content{
+        height: 100%;
+        width:100%;
+        font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+
+        & .cont-img{
+            width: 93%;
+            margin: 0 auto;
+            & .img{
+                text-align: center;
+
+                & .cont-img-img{
+                    width: 100%;
+                    height: auto;
+                }
+            }
+        }
+
+        & .cont-title{
+            & h1{
+                margin-bottom: -0.28em;
+                margin-top: 0.54em;
+                font-size: 30px;
+                letter-spacing: -0.022em;
+                line-height: 1.12;
+                font-weight: 700;
+                font-style: normal;
+                font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+                color: rgba(41, 41, 41, 1);
+            }
+        }
+
+        & h2{
+            margin-bottom: -0.42em;
+            margin-top: 0.46em;
+            font-size: 22px;
+            line-height: 1.394;
+            font-weight: 470;
+            color: rgba(117, 117, 117, 1);
+            font-style: normal;
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+            'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+            sans-serif;
+        }
+    
+        & span.response{
+            padding: 17px 0;
+            width: 93%;
+            margin: 0 auto;
+
+            &>div>div{
+                &>h4{
+                    margin: 7px 5px;
+                    font-size: 12px;
+                    font-weight: 300;
+                    color: rgba(117, 117, 117, 1);
+                    line-height: 20px;
+                    font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+                }
+            }
+        }
+    
+    }
+}

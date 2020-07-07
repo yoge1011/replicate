@@ -1,0 +1,133 @@
+.single-blog-page{
+    & .blog-header{
+        width: 58.4%;
+        margin: 0 auto;
+        padding-right: 50px;
+
+        & .blog-title{
+            h1{
+                margin-top: 0.78em;
+                line-height: 48px;
+                letter-spacing: 0;
+                font-size: 40px;
+                color: rgba(41, 41, 41, 1);
+                font-family: medium-content-title-font, Georgia, Cambria, "Times New Roman", Times, serif;
+                font-weight: 400;
+                word-break: break-word;
+            }
+        }
+
+        & h2{
+            line-height: 32px;
+            margin-top: 0.79em;
+            letter-spacing: 0;
+            word-break: break-word;
+            font-size: 20px;
+            font-weight: 300;
+            color: rgba(117, 117, 117, 1);
+            font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+        }
+
+        & .blog-user{
+            & .user-detail{
+                display: flex;
+                justify-content: space-between;
+
+                & .user-avatar{
+                    display: flex;
+
+                    & a{
+                        img{
+                            border-radius: 50%;
+                            height: 48px;
+                            width: 48px;
+                            vertical-align: middle;
+                            display: block;
+                        }
+                    }
+
+                    & .username.createdat{
+                        margin-left: 12px;
+
+                        & span a{
+                            text-decoration: none;
+                            cursor: pointer;
+                            color: rgba(41, 41, 41, 1);
+                            margin-left: 3px;
+                            margin-right: 6px;
+                        }
+
+                        & button{
+                            background: 0;
+                            border-style: solid;
+                            border-width: 1px;
+                            border-radius: 4px;
+                            border-color: rgba(117, 117, 117, 1);
+                            line-height: 18px;
+                        }
+
+                        & .dd.time{
+                            & span{
+                                font-size: 13px;
+                                font-weight: 300;
+                                line-height: 20px;
+                                color: rgba(117, 117, 117, 1);
+                                font-family: medium-content-sans-serif-font, "Lucida Grande", "Lucida Sans Unicode", "Lucida Sans", Geneva, Arial, sans-serif;
+                            }
+                        }
+                    }
+                }
+
+                & .user-social-link {
+                    display: flex;
+
+                    & button{
+                        background: transparent;
+                        border: unset;
+                        padding: unset;
+                    }
+                }
+            }
+        }
+    }
+
+    & .hd-img.blog-img{
+        margin-top: 56px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+    & .blog-completion{
+        margin: 2em 0;
+        padding: 0 6.5em;
+
+        & .jslogo-completion{
+            text-align: center;
+        }
+
+        & .technology.lang{
+            margin-top: 40px;
+
+            & ul{
+                & li{
+                    list-style-type: none;
+                    display: inline-block;
+                    margin-bottom: 8px;
+                    margin-right: 8px;
+
+                    & a{
+                        background: rgba(242, 242, 242, 1);
+                        padding: 5px 10px;
+                        border-radius: 3px;
+                        line-height: 22px;
+                        text-decoration: none;
+                        font-size: 15px;
+                        color: rgba(117, 117, 117, 1);
+                        font-weight: 400;
+                        font-family: medium-content-sans-serif-font, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+                    }
+                }
+            }
+        }
+    }
+}

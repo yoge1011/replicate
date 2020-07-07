@@ -1,0 +1,94 @@
+.blog-item{
+    color: rgba(0,0,0,.84);
+
+    & .blog-image{
+        & .image{
+            background-position: 50% 50% !important;
+            background-origin: border-box;
+            background-size: cover;
+            background-color: #f0f0f0;
+            height: 172px;
+            display: block;
+            border: 1px solid rgba(0,0,0,.15);
+        }
+    }
+
+    & .blog-detail {
+
+        & .blog-detail{
+            color: inherit;
+           
+            & h3{
+                word-break: break-word;
+                word-break: break-word;
+                text-overflow: ellipsis;
+                font-size: 26px;
+                line-height: 1.1;
+                font-weight: 600;
+                font-style: normal;
+                letter-spacing: 0;
+            }
+        }
+
+        & .short-description {
+            line-height: 1.2;
+            font-size: 20px;
+            color: rgba(0,0,0,.54)!important;
+            fill: rgba(0,0,0,.54)!important;
+            margin-top: 7px;
+        }
+    }
+
+    & a{
+        text-decoration: none;
+    }
+
+    .blog-user-detail{
+        display:flex;
+        margin: 12px 0;
+        
+        & .user-avatar{
+
+            & a{
+                
+                & .avatar{
+                    & img{
+                        width:36px;
+                        height: 36px;
+                        vertical-align: middle;
+                        border-radius: 100%;
+                    }
+                }
+            }
+        }
+
+        & .created-detail{
+            font-size: 10px;
+            line-height: 1.4;
+            padding-left: 10px;
+            text-rendering: auto;
+            letter-spacing: 0;
+            font-weight: 400;
+            font-style: normal;
+            color: #757575;
+            fill: rgba(0,0,0,.54);
+            flex: 1 1 auto;
+
+            & a{
+                color: #717272;
+                text-decoration: none;
+                cursor: pointer;
+                font-size: 16px;
+                line-height: 1.4;
+                letter-spacing: 0;
+                font-weight: 400;
+                font-style: normal;
+            }
+        }
+    }
+
+    .blog-user-detail:before {
+        display: table;
+        content: " ";
+    }
+}

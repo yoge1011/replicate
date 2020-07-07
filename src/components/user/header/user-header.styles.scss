@@ -1,0 +1,21 @@
+.user-nav-header-content{
+    position: absolute;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.05);
+    z-index: 500;
+    right: 0;
+    left: 0;
+    top: 0;
+
+    & .user-header{
+        display: flex;
+        height: 65px;
+        align-items: center;
+        width: 90%;
+        margin: 0 auto;
+
+        & .logo-content {
+            flex: 1 1 auto;
+        }
+    }
+
+}

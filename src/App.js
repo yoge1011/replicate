@@ -1,24 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
+import Header from './components/header/header.component';
+import Blogs from './pages/blogs/blogs.page'
+import { Redirect, Switch, Route, useLocation } from "react-router-dom";
+import SingleBlog from './pages/single-blog/single-blog.page'; 
+import User from './pages/user/user.page';
 
-function App() {
+const App = () => {
+  const location = useLocation();
+  const pathName = location.pathname;
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      { pathName.includes('/user') ? null : <Header /> }
+      
+      <Switch>
+          <Route
+            exact
+            path="/"
+            render={() =><Redirect to="/blogs" />}
+          />
+          <Route exact path="/blogs" component={Blogs} />
+          <Route exact path="/blogs/:id" component={ SingleBlog } />
+          <Route path="/user/:id" component={ User } />
+      </Switch>
     </div>
   );
 }
